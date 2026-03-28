@@ -13,6 +13,10 @@ app.post("/user", (req, res) => {
     });
 });
 
+app.get("/auth", (req, res) => {
+    res.send("Demo auth endpoint");
+});
+
 app.listen(3000, () => {
     console.log("Server running on port 3000.");
 });
